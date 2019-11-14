@@ -47,7 +47,7 @@ class xuanran{
 		if(localStorage.getItem("cun")){
 			this.name=JSON.parse(localStorage.getItem("cun")).name;
 			if(this.name){
-				this.biannum.innerText=JSON.parse(localStorage.getItem("shops")).length
+				this.jiajia();
 					this.deng.innerText="欢迎"+this.name+"回来";
 					 this.zhu.innerText="退出";			 
 					if(this.deng.className.indexOf("denglu")!=-1&&this.zhu.className.indexOf("zhuce")!=-1){
@@ -59,6 +59,19 @@ class xuanran{
 			}
 		}else{
 					this.ceshi();
+		}
+	}
+	jiajia(){
+		if(localStorage.getItem("shops")){
+			this.da=JSON.parse(localStorage.getItem("shops"));
+			this.baaa=[];
+			for(var i=0;i<this.da.length;i++){
+				if(this.da[i].name==this.name){
+					this.baaa.push(i)
+				}
+				console.log(this.baaa)
+				this.biannum.innerText=this.baaa.length;
+			}
 		}
 	}
 	tui(){
@@ -308,25 +321,28 @@ class xuanran{
 		}
 		console.log(this.man)
 			if(localStorage.getItem("cun")){
-		this.man.onclick=function(){
-			
-			_this.id=JSON.parse(localStorage.getItem("xiangqing"))[0];
-			_this.panduan();
+				this.name=JSON.parse(localStorage.getItem("cun")).name;
+						this.man.onclick=function(){
+							_this.id=JSON.parse(localStorage.getItem("xiangqing"))[0];
+							_this.panduan();
+							_this.jiajia();
+						}
+						this.kuai.onclick=function(){
+							_this.id=JSON.parse(localStorage.getItem("xiangqing"))[0];
+							_this.panduan();
+							_this.jiajia();
+							window.location.href='juanshop.html';
+							window.event.returnValue=false;
+						}
+				}
 		}
-		this.kuai.onclick=function(){
-			_this.id=JSON.parse(localStorage.getItem("xiangqing"))[0];
-			_this.panduan();
-			window.location.href='juanshop.html';
-			window.event.returnValue=false;
-		}
-		}
-	}
 	panduan(){
+		console.log(this.zhang.name)
 		this.arr=localStorage.getItem("shops")?JSON.parse(localStorage.getItem("shops")):[];
 		       if(localStorage.getItem("shops")){
 		           var s=true;
 		        for(var i=0;i<this.arr.length;i++){
-		            if(this.arr[i].id==this.id){
+		            if(this.arr[i].id==this.id&&this.arr[i].name==this.zhang.name){
 		                this.arr[i].num=parseInt(this.arr[i].num)+parseInt(this.numa.value);
 		                s=false;
 		            }

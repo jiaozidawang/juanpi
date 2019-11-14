@@ -80,9 +80,7 @@ class csshtml{
 		if(localStorage.getItem("cun")){
 			this.name=JSON.parse(localStorage.getItem("cun")).name;
 			if(this.name){
-				if(localStorage.getItem("shops")){
-					this.biannum.innerText=JSON.parse(localStorage.getItem("shops")).length;
-				}
+				this.jiajia();
 					this.deng.innerText="欢迎"+this.name+"回来";
 					 this.zhu.innerText="退出";			 
 						this.deng.className=("huanying")
@@ -307,6 +305,19 @@ class csshtml{
 				if(this.imga[i].offsetTop<(document.documentElement.scrollTop+document.documentElement.clientHeight)){
 					this.imga[i].src=this.imga[i].getAttribute("datasrc");
 				}
+			}
+		}
+	}
+	jiajia(){
+		if(localStorage.getItem("shops")){
+			this.da=JSON.parse(localStorage.getItem("shops"));
+			this.baaa=[];
+			for(var i=0;i<this.da.length;i++){
+				if(this.da[i].name==this.name){
+					this.baaa.push(i)
+				}
+				console.log(this.baaa)
+				this.biannum.innerText=this.baaa.length;
 			}
 		}
 	}

@@ -61,7 +61,7 @@ class csshtml{
 		if(localStorage.getItem("cun")){
 			this.name=JSON.parse(localStorage.getItem("cun")).name;
 			if(this.name){
-				this.biannum.innerText=JSON.parse(localStorage.getItem("shops")).length
+				this.jiajia()
 					this.deng.innerText="欢迎"+this.name+"回来";
 					 this.zhu.innerText="退出";			 
 					if(this.deng.className.indexOf("denglu")!=-1&&this.zhu.className.indexOf("zhuce")!=-1){
@@ -73,6 +73,19 @@ class csshtml{
 			}
 		}else{
 			this.ceshi();
+		}
+	}
+	jiajia(){
+		if(localStorage.getItem("shops")){
+			this.da=JSON.parse(localStorage.getItem("shops"));
+			this.baaa=[];
+			for(var i=0;i<this.da.length;i++){
+				if(this.da[i].name==this.name){
+					this.baaa.push(i)
+				}
+				console.log(this.baaa)
+				this.biannum.innerText=this.baaa.length;
+			}
 		}
 	}
 	tui(){

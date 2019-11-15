@@ -176,7 +176,7 @@ class shop{
 				    if(e.target.className.indexOf( "checked")!=-1){
 						_this.theadspan.className=_this.footallspan.className.replace("checked"," ")
 						e.target.className=e.target.className.replace("checked"," ")
-						for(let i=0;i<_this.allspan.length;i++){
+						for(let i=0;i<_this.allspan.l-ength;i++){
 						_this.allspan[i].className=_this.allspan[i].className.replace("checked"," ")
 						}
 					}else{
@@ -201,7 +201,7 @@ class shop{
 				var arr=JSON.parse(localStorage.getItem("shops"))
 				var obj={}
 				for(let i=0;i<arr.length;i++){
-					if(arr[i].id==e.target.getAttribute("sid")){
+					if(arr[i].id==e.target.getAttribute("sid")&&arr[i].name==JSON.parse(localStorage.getItem("cun")).name){
 						
 						obj.name=JSON.parse(localStorage.getItem("cun")).name;
 						obj.id=e.target.getAttribute("sid");
@@ -219,7 +219,8 @@ class shop{
 				  var arr=JSON.parse(localStorage.getItem("shops"))
 				  var obj={};
 				  for(let i=0;i<arr.length;i++){
-				  	if(arr[i].id==e.target.getAttribute("sid")){		
+					  console.log(this.name)
+				  	if(arr[i].id==e.target.getAttribute("sid")&&arr[i].name==JSON.parse(localStorage.getItem("cun")).name){		
 				  		obj.name=JSON.parse(localStorage.getItem("cun")).name;
 				  		obj.id=e.target.getAttribute("sid");
 				  		obj.num=e.target.previousElementSibling.innerText;
@@ -252,7 +253,8 @@ class shop{
 					var arr=JSON.parse(localStorage.getItem("shops"))
 					var obj={};
 					for(let i=0;i<arr.length;i++){
-						if(arr[i].id==e.target.getAttribute("sid")){		
+							console.log(this.name)
+						if(arr[i].id==e.target.getAttribute("sid")&&arr[i].name==JSON.parse(localStorage.getItem("cun")).name){	
 							arr.splice(i,1)
 							localStorage.setItem("shops",JSON.stringify(arr))
 							e.target.parentNode.parentNode.remove()

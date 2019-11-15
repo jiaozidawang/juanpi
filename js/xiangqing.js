@@ -345,6 +345,7 @@ class xuanran{
 		            if(this.arr[i].id==this.id&&this.arr[i].name==this.zhang.name){
 		                this.arr[i].num=parseInt(this.arr[i].num)+parseInt(this.numa.value);
 		                s=false;
+						break;
 		            }
 		        }
 		        if(s){

@@ -5,7 +5,6 @@ class shop{
 	 this.top=document.getElementsByClassName("cnZstM")[0];
 	 this.zhong=document.getElementsByClassName("eiPhbT")[0];
 	 this.foot=document.getElementsByClassName("dTaAdI")[0];
-	 this.shops=JSON.parse(localStorage.getItem("shops"));
 	 this.yuan=document.getElementsByClassName("jIjoBj")[0];
 	 this.deng=document.getElementsByClassName("denglu")[0];
 	 this.zhu=document.getElementsByClassName("zhuce")[0];
@@ -15,9 +14,13 @@ class shop{
 		if(localStorage.getItem("cun")){
 			this.name=JSON.parse(localStorage.getItem("cun")).name;
 			if(this.name){
-				this.pan();
+				if( JSON.parse(localStorage.getItem("shops"))){
+					 this.shops=JSON.parse(localStorage.getItem("shops"));
+					 this.pan();
+				}
 					this.deng.innerText="欢迎"+this.name+"回来";
-					 this.zhu.innerText="退出";			 
+					 this.zhu.innerText="退出";
+						  console.log(this.name)
 					if(this.deng.className.indexOf("denglu")!=-1&&this.zhu.className.indexOf("zhuce")!=-1){
 						this.deng.className=("huanying")
 						this.zhu.className=("red tuichu")
@@ -45,13 +48,13 @@ class shop{
 	}
 	pan(){
 		var a=true;
-		for(let i=0;i<this.shops.length;i++){
-			if(this.shops[i].name==this.name){
-				this.yuan.style.display="none";
-				this.load();
-				a=false;
-				break;
-			}
+			for(let i=0;i<this.shops.length;i++){
+				if(this.shops[i].name==this.name){
+					this.yuan.style.display="none";
+					this.load();
+					a=false;
+					break;
+				}
 		}
 		if(a){
 			this.yuan.style.display="block";
@@ -176,7 +179,7 @@ class shop{
 				    if(e.target.className.indexOf( "checked")!=-1){
 						_this.theadspan.className=_this.footallspan.className.replace("checked"," ")
 						e.target.className=e.target.className.replace("checked"," ")
-						for(let i=0;i<_this.allspan.l-ength;i++){
+						for(let i=0;i<_this.allspan.length;i++){
 						_this.allspan[i].className=_this.allspan[i].className.replace("checked"," ")
 						}
 					}else{

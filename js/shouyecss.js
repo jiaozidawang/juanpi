@@ -123,7 +123,6 @@ class csshtml{
 		}
 		this.xuan.innerHTML=""
 		this.xuan.innerHTML=str;
-		this.image();
 		onscroll=function(){
 			_this.image();
 		}

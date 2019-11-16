@@ -46,6 +46,7 @@ class csshtml{
 		this.deng=document.getElementsByClassName("denglu")[0];
 		this.zhu=document.getElementsByClassName("zhuce")[0];
 		this.biannum=document.getElementsByClassName("biannum")[0];
+		this.zui=document.getElementsByClassName("pager")[0]
 		this.int();
 		this.mingzi();
 	}
@@ -55,6 +56,7 @@ class csshtml{
 		ge(this.url,function(res){
 			_this.res=JSON.parse(res);
 			_this.load();
+			_this.seach()
 		})
 	}
 	mingzi(){
@@ -290,6 +292,72 @@ class csshtml{
 			window.event.returnValue=false;
 		}
 	}
+	}
+	seach(){
+		var _this=this;
+		this.inpput=document.getElementsByClassName("text")[0];
+		this.inpput.oninput=function(){
+			_this.snt(_this.inpput.value)
+		
+		}
+		this.snt(this.inpput.value)
+	}
+	snt(value){
+		var _this=this;
+		var shu=[];
+		this.inpput1=document.getElementsByClassName("smt")[0];
+		this.jihe=[];
+		this.zhi=[];
+		this.op=[];
+		for(var i=0;i<this.res.length;i++){
+			this.jihe.push(this.res[i].name)
+		}
+		for(var j=0;j<this.jihe.length;j++){
+			if(this.jihe[j].includes(this.inpput.value)==true){
+					shu.push(this.jihe[j]);
+			};
+		
+		}
+		if(_this.inpput.value==""){
+			_this.zui.style.display="block";
+			for(var i=0;i<_this.res.length;i+=10){
+				_this.arr.push(_this.res.slice(i,i+10));
+			}
+				var shu=_this.arr[0]
+				var str=""
+				for(let k in shu){
+					str+=`
+						<li num="0" goodsid="${shu[k].goodsid}">
+							<img src="${shu[k].img}" width="220px"height="220px">
+							<p><span style="color:red;">￥${shu[k].price}</span><span style="margin-left:8px;color:#ccc;font-size:14px;"><s>${shu[k].priceold}</s></span></p>
+							<P><span  style="font-size:12px;">${shu[k].name}</span><span style="float:right;margin-right:10px;font-size:12px;color:#ccc;">${shu[k].new}</span></p>
+						</li>
+					`
+			}
+			_this.xuan.innerHTML=""
+			_this.xuan.innerHTML=str;
+			window.location.reload();
+		}
+		this.inpput1.onclick=function(){
+			var strs="";
+			for(var k=0;k<_this.res.length;k++){
+				for(var j=0;j<shu.length;j++){
+					if(_this.res[k].name==shu[j]){
+								strs+=`
+									<li  goodsid="${k}">
+										<img src="${_this.res[k].img}" width="220px"height="220px">
+										<p><span style="color:red;">￥${_this.res[k].price}</span><span style="margin-left:8px;color:#ccc;font-size:14px;"><s>${_this.res[k].priceold}</s></span></p>
+										<P><span  style="font-size:12px;">${_this.res[k].name}</span><span style="float:right;margin-right:10px;font-size:12px;color:#ccc;">${_this.res[k].new}</span></p>
+									</li>
+								`
+							_this.xuan.innerHTML="";
+							_this.xuan.innerHTML=strs;
+							_this.zui.style.display="none";
+					}
+				}
+			}
+		}
+	
 	}
 }
 new csshtml(xuan);

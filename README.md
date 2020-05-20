@@ -18,7 +18,16 @@ npm run dev ghb_trustBuy
 	基于vue开发的项目，使用vue官方脚手架vue cli
 
 	ui层面统一使用vux
+  下载好node_module依赖后
+  首次运行和更新了engineui后，要先run下面的命令：
+  npm run themes 
+  npm  run dll
 
+  弃用:npm run common sit  有问题
+
+  这个命令会把公共资源打包到static文件夹
+  本地运行命令:
+  npm run dev ghb_trustBuy
 
 
 ## 环境篇

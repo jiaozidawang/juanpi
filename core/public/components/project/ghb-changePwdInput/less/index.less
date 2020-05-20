@@ -1,0 +1,57 @@
+@import '../../../../less/mixin.less';
+@import '../../../styles/1px.less';
+.ghb-changePwdInput {
+  padding: 0 @spacing;
+}
+
+.ghb-changePwdInpu_content{
+  height: @lh-line;
+  font-size: @fs30;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  &::before {
+    .setTopLine
+  }
+  .ghb-changePwdInput_value{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .ghb-changePwdInput_value_circle{
+      font-size: @fs28;
+    }
+  }
+}
+
+.ghb-changePwdInput_placeholder{
+  color: @font-t3;
+}
+
+.flashLine{
+  height: 100%;
+  &::after {
+    content: " ";
+    display: block;
+    width: .04rem;
+    height: .5rem;
+    background-color: @color-main;
+    animation: flashLine 1s infinite;
+  }
+}
+
+@keyframes flashLine {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

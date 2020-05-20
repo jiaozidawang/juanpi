@@ -1,0 +1,82 @@
+{
+  "demo": {
+    "index": {
+      "title":"demo页面",
+      "needLogin": false
+    },
+    "absort": {
+      "title":"通讯录排序",
+      "needLogin": false,
+      "pushParam": {
+        "titleBarColor": 11944508,
+        "titleColor": 16777215
+      }
+    },
+    "form": {
+      "title":"表单",
+      "needLogin": false
+    },
+    "address": {
+      "title":"地址选择",
+      "needLogin": false
+    },
+    "bscroll": {
+      "title":"BScroll示例",
+      "needLogin": false
+    },
+    "button": {
+      "title":"按钮组件展示",
+      "needLogin": false
+    },
+    "datepick": {
+      "title":"时间选择组件",
+      "needLogin": false
+    },
+    "cell": {
+      "title":"cell组件展示",
+      "needLogin": false
+    },
+    "fontex": {
+      "title":"字体行高展示",
+      "needLogin": false
+    },
+    "jsapi": {
+      "title":"JSAPI示例",
+      "needLogin": false
+    },
+    "orcode": {
+      "title": "二维码示例",
+      "needLogin": false
+    },
+    "cloud_pay": {
+      "title": "云闪付demo",
+      "needLogin": false
+    },
+    "result": {
+      "title": "结果",
+      "needLogin": false
+    },
+    "globalTip": {
+      "title": "全局提示",
+      "needLogin": false
+    },
+    "reminder": {
+      "title": "温馨提示",
+      "needLogin": false
+    },
+    "testApi": {
+      "title": "接口测试",
+      "needLogin": false,
+      "pushParam": {
+        "titleBarColor": 11944508,
+        "titleColor": 16777215
+      }
+    }
+  },
+  "hke": {
+    "hkeInput": {
+      "title": "输入框",
+      "needLogin": false
+    }
+  }
+}

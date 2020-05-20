@@ -1,0 +1,65 @@
+{
+    "mainProcess": {
+        "fundDetail": {
+            "title": "私募详情"
+        },
+        "videoWatch": {
+            "title": "观看产品推介视频"
+        },
+        "fundPurchase": {
+            "title": "填写认购信息"
+        },
+        "videoCheck": {
+            "title": "视频验证"
+        },
+        "docCheck": {
+            "title": "签署单证"
+        },
+        "purchaseStatus": {
+            "title": "操作成功"
+        },
+        "materialCheck": {
+            "title": "材料审核"
+        },
+        "materialCheckStatus": {
+            "title": "操作成功"
+        },
+        "sign": {
+            "title": "单证签署"
+        },
+        "bothwayRecord": {
+            "title": "双录系统"
+        },
+        "bothwayRecordTest": {
+            "title": "双录系统ios调试"
+        }
+    },
+    "certification": {
+        "index": {
+            "title": "合格投资者认证"
+        },
+        "intermediate": {
+            "title": "合格投资者认证"
+        },
+        "meterial": {
+            "title": "上传资产证明材料"
+        },
+        "shot": {
+            "title": "资产证明截图"
+        },
+        "sign": {
+            "title": "签署承诺函"
+        },
+        "result": {
+            "title": "操作成功"
+        }
+    },
+    "transaction": {
+        "detail": {
+            "title": "交易中详情"
+        },
+        "cancle": {
+            "title": "操作成功"
+        }
+    }
+}

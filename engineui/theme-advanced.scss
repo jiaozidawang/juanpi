@@ -1,0 +1,209 @@
+/**
+ * 颜色变量
+ */
+$advanced-ffffff: #ffffff;
+$advanced-dfdfdf: #dfdfdf;
+$advanced-fbf5e9: #fbf5e9;
+$advanced-ededed: #ededed;
+$advanced-c1c1c1: #c1c1c1;
+$advanced-888888: #888888;
+$advanced-696b7b: #696b7b;
+$advanced-3f4151: #3f4151;
+$advanced-09122b: #09122b;
+$advanced-2c2c38: #2c2c38;
+$advanced-ddbd89: #ddbd89;
+$advanced-c6a779: #c6a779;
+$advanced-f0cf98: #f0cf98;
+$advanced-B89868: #B89868;
+$advanced-c47d42: #c47d42;
+$advanced-c68b59: #c68b59;
+$advanced-dd2309: #dd2309;
+$advanced-50668b: #50668b;
+$advanced-46628a: #46628a;
+$advanced-7ed321: #7ed321;
+$advanced-458ffc: #458ffc;
+$advanced-ffe4cd: #ffe4cd;
+$advanced-ce9e76: #ce9e76;
+$advanced-f2f4f7: #f2f4f7;
+$advanced-696b7b: #696b7b;
+$advanced-3f4151: #3f4151;
+$advanced-D9B883: #D9B883;
+$advanced-CFAA74: #CFAA74;
+$advanced-f5f5f9: #f5f5f9;
+$advanced-fAf5f1: #fAf5f1;
+$advanced-999a9c: #999a9c;
+$advanced-56585a: #56585a;
+$advanced-717272: #717272;
+$advanced-2e2f30: #2e2f30;
+$advanced-9E7355: #9E7355;
+$advanced-1287f4: #1287f4;
+$advanced-2bd40c: #2bd40c;
+$advanced-ff9500: #ff9500;
+$advanced-18171d: #18171d;
+$advanced-999999: #999999;
+$advanced-2C2C38: #2C2C38;
+$advanced-9499A5: #9499A5;
+$advanced-4A4A4A: #4A4A4A;
+$advanced-395e8a: #395e8a;
+$advanced-56585a1A: #56585a1A;
+$advanced-5A5C5E: #5A5C5E;
+$advanced-ea2c1d: #ea2c1d;
+$advanced-D9B87D: #D9B87D;
+$advanced-f1c999: #f1c999;
+$advanced-CA9B6A: #CA9B6A;
+
+$advanced-2c2c38-rgba50: rgba(44, 44, 56, .5);
+$advanced-56585a-rgba060: rgba(86, 88, 90, 0.6);
+$advanced-B89868-rgba010: rgba(184, 152, 104, 0.1);
+$advanced-ce9e76-rgba010: rgba(206, 158, 118, 0.1);
+$advanced-D8B77E-rgba045: rgba(216, 183, 126, 0.45);
+
+
+/**
+ ************************************************
+ * 手机银行主题 背景 颜色定义
+ ************************************************
+ */
+$nmb-bg-t1: $advanced-2c2c38;
+$nmb-bg-t2: $advanced-2c2c38;
+$nmb-bg-t3: $advanced-dfdfdf;
+$nmb-bg-t4: $advanced-ddbd89;
+$nmb-bg-t5: $advanced-ededed;
+$nmb-bg-t6: $advanced-fbf5e9;
+$nmb-bg-t7: $advanced-f2f4f7;
+$nmb-bg-t8: $advanced-46628a;
+$nmb-bg-t9: $advanced-f5f5f9;
+$nmb-bg-t10: $advanced-ce9e76-rgba010;
+$nmb-bg-t11: $advanced-f2f4f7;
+$nmb-bg-t12: $advanced-56585a1A;
+$nmb-bg-t13: $advanced-56585a-rgba060;
+$nmb-bg-t14: $advanced-D9B883;
+$nmb-bg-t15: $advanced-1287f4;
+$nmb-bg-t16: $advanced-2bd40c;
+$nmb-bg-t17: $advanced-ff9500;
+$nmb-bg-t18: $advanced-18171d;
+$nmb-bg-t19: $advanced-999999;
+$nmb-bg-t20: $advanced-B89868-rgba010;
+$nmb-bg-t21: $advanced-ce9e76;
+$nmb-bg-t22: $advanced-9499A5;
+$nmb-bg-t23: $advanced-ffffff;
+$nmb-bg-t24: $advanced-ffffff;
+$nmb-bg-t25: $advanced-ffffff;
+$nmb-bg-t26: $advanced-ffffff;
+$nmb-bg-t27: $advanced-ffffff;
+$nmb-bg-t28: $advanced-2c2c38-rgba50;
+$nmb-bg-t29: $advanced-ffffff;
+$nmb-bg-t30: $advanced-696b7b;
+$nmb-bg-t31: $advanced-B89868;
+$nmb-bg-t32: $advanced-B89868;
+$nmb-bg-t33: $advanced-ea2c1d;
+$nmb-bg-t34: $advanced-D8B77E-rgba045;
+$nmb-bg-t35: $advanced-D9B87D;
+$nmb-bg-t36: $advanced-c1c1c1;
+
+$nmb-bg-gradient-l: $advanced-696b7b;
+$nmb-bg-gradient-r: $advanced-3f4151;
+$nmb-bg-gradient-t1-l: $advanced-ffe4cd;
+$nmb-bg-gradient-t1-r: $advanced-ce9e76;
+$nmb-bg-gradient-t2: linear-gradient(to right, $advanced-696b7b, $advanced-3f4151);
+$nmb-bg-gradient-t3: linear-gradient(180deg, $advanced-D9B883 0%, $advanced-CFAA74 100%);
+$nmb-bg-gradient-t4: linear-gradient(135deg, $advanced-5A5C5E 100%, $advanced-2e2f30 100%);
+$nmb-bg-gradient-t5-l: $advanced-D9B883;
+$nmb-bg-gradient-t5-r: $advanced-CFAA74;
+$nmb-bg-gradient-t6: linear-gradient(135deg, $advanced-D9B883 0%, $advanced-CFAA74 100%);
+$nmb-bg-gradient-t7: linear-gradient(270deg, $advanced-D9B883 0%, $advanced-CFAA74 100%);
+$nmb-bg-gradient-t8: linear-gradient(135deg, $advanced-696b7b 0%, $advanced-3f4151 100%);
+$nmb-bg-gradient-t9: linear-gradient(135deg, $advanced-696b7b 0%, $advanced-3f4151 100%);
+$nmb-bg-gradient-t10: linear-gradient(90deg,
+  rgba(187, 153, 50, 0),
+  rgba(195, 163, 69, 0.08),
+  rgba(213, 154, 68, 0.08),
+  rgba(184, 152, 55, 0.06),
+  rgba(184, 152, 55, 0));
+$nmb-bg-gradient-t11: linear-gradient(44deg, $advanced-f1c999 0%, $advanced-CA9B6A 100%);
+
+
+/**
+ ************************************************
+ * 手机银行主题 字体 颜色定义
+ ************************************************
+ */
+$nmb-font-white: $advanced-ffffff;
+$nmb-font-dark: $advanced-09122b;
+$nmb-font-gray: $advanced-888888;
+$nmb-font-red: $advanced-ea2c1d;
+$nmb-font-t1: $advanced-ffffff;
+$nmb-font-t2: $advanced-888888;
+$nmb-font-t3: $advanced-c1c1c1;
+$nmb-font-t4: $advanced-c6a779;
+$nmb-font-t5: $advanced-50668b;
+$nmb-font-t6: $advanced-f0cf98;
+$nmb-font-t7: $advanced-c6a779;
+$nmb-font-t8: $advanced-c47d42;
+$nmb-font-t9: $advanced-46628a;
+$nmb-font-t10: $advanced-7ed321;
+$nmb-font-t11: $advanced-B89868;
+$nmb-font-t12: $advanced-09122b;
+$nmb-font-t13: $advanced-c6a779;
+$nmb-font-t14: $advanced-458ffc;
+$nmb-font-t15: $advanced-09122b;
+$nmb-font-t16: $advanced-f0cf98;
+$nmb-font-t17: $advanced-ffffff;
+$nmb-font-t18: $advanced-B89868;
+$nmb-font-t19: $advanced-B89868;
+$nmb-font-t20: $advanced-888888;
+$nmb-font-t21: $advanced-2C2C38;
+$nmb-font-t22: $advanced-888888;
+$nmb-font-t23: $advanced-ffffff;
+$nmb-font-t24: $advanced-B89868;
+$nmb-font-t25: $advanced-ce9e76;
+$nmb-font-t30: $advanced-B89868;
+$nmb-font-t31: $advanced-c47d42;
+$nmb-font-t32: $advanced-B89868;
+$nmb-font-t33: $advanced-c1c1c1;
+$nmb-font-t34: $advanced-9E7355;
+$nmb-font-t35: $advanced-B89868;
+$nmb-font-t36: $advanced-ffffff;
+$nmb-font-t37: $advanced-B89868;
+$nmb-font-t38: $advanced-B89868;
+$nmb-font-t39: $advanced-B89868;
+$nmb-font-t40: $advanced-09122b;
+$nmb-font-t41: $advanced-888888;
+$nmb-font-t42: $advanced-c6a779;
+$nmb-font-t43: $advanced-B89868;
+$nmb-font-t44: $advanced-B89868;
+$nmb-font-t45: $advanced-c6a779;
+$nmb-font-t46: $advanced-B89868;
+
+
+/**
+ ************************************************
+ * 手机银行主题 边框 颜色定义
+ ************************************************
+ */
+$nmb-border: $advanced-ededed;
+$nmb-border-gray: $advanced-888888;
+$nmb-border-t1: $advanced-c68b59;
+$nmb-border-t2: $advanced-c6a779;
+$nmb-border-t3: $advanced-c1c1c1;
+$nmb-border-t4: $advanced-ededed;
+$nmb-border-t5: $advanced-B89868;
+$nmb-border-t6: $advanced-B89868;
+$nmb-border-t7: $advanced-B89868;
+$nmb-border-t8: $advanced-888888;
+$nmb-border-t8: $advanced-888888;
+$nmb-border-t9: $advanced-ffffff;
+
+$nmb-link: $advanced-458ffc;
+
+$nmb-bg-main: $advanced-ffffff;
+$nmb-font-main: $advanced-ffffff;
+$nmb-border-main: $advanced-ffffff;
+
+$nmb-arrow-t1: $advanced-c1c1c1;
+
+$line-t1: $advanced-2c2c38;
+
+.app-theme-advanced {
+  @import './index.scss';
+}

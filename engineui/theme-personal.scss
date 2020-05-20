@@ -1,0 +1,209 @@
+/**
+ ************************************************
+ * 颜色变量
+ ************************************************
+ */
+$personal-ffffff: #ffffff;
+$personal-f2f4f7: #f2f4f7;
+$personal-dfdfdf: #dfdfdf;
+$personal-ddbd89: #ddbd89;
+$personal-ededed: #ededed;
+$personal-FBF5E9: #FBF5E9;
+$personal-DD2309: #DD2309;
+$personal-46628A: #46628A;
+$personal-D9B883: #D9B883;
+$personal-CFAA74: #CFAA74;
+$personal-09122b: #09122b;
+$personal-888888: #888888;
+$personal-c1c1c1: #c1c1c1;
+$personal-c6a779: #c6a779;
+$personal-50668b: #50668b;
+$personal-f0cf98: #f0cf98;
+$personal-D3BC99: #D3BC99;
+$personal-7ed321: #7ed321;
+$personal-D6B47F: #D6B47F;
+$personal-B89868: #B89868;
+$personal-754533: #754533;
+$personal-C68B59: #C68B59;
+$personal-459FFC: #459FFC;
+$personal-f1c999: #f1c999;
+$personal-c47d42: #c47d42;
+$personal-ffe4cd: #ffe4cd;
+$personal-ce9e76: #ce9e76;
+$personal-5A5C5E: #5A5C5E;
+$personal-2E2F30: #5A5C5E;
+$personal-f5f5f9: #f5f5f9;
+$personal-fAf5f1: #fAf5f1;
+$personal-999a9c: #999a9c;
+$personal-56585a: #56585a;
+$personal-717272: #717272;
+$personal-9E7355: #9E7355;
+$personal-1287f4: #1287f4;
+$personal-2bd40c: #2bd40c;
+$personal-ff9500: #ff9500;
+$personal-18171d: #18171d;
+$personal-999999: #999999;
+$personal-2C2C38: #2C2C38;
+$personal-9499A5: #9499A5;
+$personal-000000: #000000;
+$personal-f7f9fa: #f7f9fa;
+$personal-58595A: #58595A;
+$personal-4A4A4A: #4A4A4A;
+$personal-395e8a: #395e8a;
+$personal-ea2c1d: #ea2c1d;
+$personal-D8B77E: #D8B77E;
+$personal-B99154: #B99154;
+$personal-CA9B6A: #CA9B6A;
+
+$personal-56585a-rgba060: rgba(86, 88, 90, 0.6);
+$personal-B89868-rgba010: rgba(184, 152, 104, 0.1);
+$personal-ce9e76-rgba010: rgba(206, 158, 118, 0.1);
+
+/**
+ ************************************************
+ * 手机银行主题 背景 颜色定义
+ ************************************************
+ */
+$nmb-bg-t1: $personal-ffffff;
+$nmb-bg-t2: $personal-f2f4f7;
+
+$nmb-bg-t3: $personal-dfdfdf;
+$nmb-bg-t4: $personal-ddbd89;
+$nmb-bg-t5: $personal-ededed;
+$nmb-bg-t6: $personal-FBF5E9;
+$nmb-bg-t7: $personal-f2f4f7;
+$nmb-bg-t8: $personal-46628A;
+$nmb-bg-t9: $personal-f5f5f9;
+$nmb-bg-t10: $personal-ce9e76-rgba010;
+$nmb-bg-t11: $personal-f2f4f7;
+$nmb-bg-t12: $personal-56585a;
+$nmb-bg-t13: $personal-56585a-rgba060;
+$nmb-bg-t14: $personal-D9B883;
+$nmb-bg-t15: $personal-1287f4;
+$nmb-bg-t16: $personal-2bd40c;
+$nmb-bg-t17: $personal-ff9500;
+$nmb-bg-t18: $personal-18171d;
+$nmb-bg-t19: $personal-999999;
+$nmb-bg-t20: $personal-B89868-rgba010;
+$nmb-bg-t21: $personal-ce9e76;
+$nmb-bg-t22: $personal-9499A5;
+$nmb-bg-t23: $personal-D9B883;
+$nmb-bg-t24: $personal-D9B883;
+$nmb-bg-t25: $personal-D9B883;
+$nmb-bg-t26: $personal-D9B883;
+$nmb-bg-t27: $personal-000000;
+$nmb-bg-t28: $personal-f7f9fa;
+$nmb-bg-t29: $personal-58595A;
+$nmb-bg-t30: $personal-58595A;
+$nmb-bg-t31: $personal-B89868;
+$nmb-bg-t32: $personal-B89868;
+$nmb-bg-t33: $personal-ea2c1d;
+$nmb-bg-t34: $personal-D8B77E;
+$nmb-bg-t35: $personal-B99154;
+$nmb-bg-t36: $personal-c1c1c1;
+
+$nmb-bg-gradient-l: $personal-D9B883;
+$nmb-bg-gradient-r: $personal-CFAA74;
+$nmb-bg-gradient-t1-l: $personal-ffe4cd;
+$nmb-bg-gradient-t1-r: $personal-ce9e76;
+$nmb-bg-gradient-t2: linear-gradient(to right, $personal-5A5C5E, $personal-2E2F30);
+$nmb-bg-gradient-t3: linear-gradient(180deg, $personal-D9B883 0%, $personal-CFAA74 100%);
+$nmb-bg-gradient-t4: linear-gradient(135deg, $personal-5A5C5E 100%, $personal-2E2F30 100%);
+$nmb-bg-gradient-t5-l: $personal-D9B883;
+$nmb-bg-gradient-t5-r: $personal-CFAA74;
+$nmb-bg-gradient-t6: linear-gradient(270deg, $personal-D9B883 0%, $personal-CFAA74 100%);
+$nmb-bg-gradient-t7: linear-gradient(270deg, $personal-D9B883 0%, $personal-CFAA74 100%);
+$nmb-bg-gradient-t8: linear-gradient(270deg, $personal-ffffff 100%, $personal-ffffff 100%);
+$nmb-bg-gradient-t9: $personal-56585a-rgba060;
+$nmb-bg-gradient-t10: linear-gradient(90deg,
+  rgba(187, 153, 50, 0),
+  rgba(195, 163, 69, 0.08),
+  rgba(213, 154, 68, 0.08),
+  rgba(184, 152, 55, 0.06),
+  rgba(184, 152, 55, 0));
+$nmb-bg-gradient-t11: linear-gradient(44deg, $personal-f1c999 0%, $personal-CA9B6A 100%);
+
+
+/**
+ ************************************************
+ * 手机银行主题 字体 颜色定义
+ ************************************************
+ */
+$nmb-font-white: $personal-ffffff;
+$nmb-font-dark: $personal-09122b;
+$nmb-font-gray: $personal-888888;
+$nmb-font-red: $personal-ea2c1d;
+$nmb-font-t1: $personal-09122b;
+$nmb-font-t2: $personal-888888;
+$nmb-font-t3: $personal-c1c1c1;
+$nmb-font-t4: $personal-c6a779;
+$nmb-font-t5: $personal-50668b;
+$nmb-font-t6: $personal-f0cf98;
+$nmb-font-t7: $personal-c6a779;
+$nmb-font-t8: $personal-c47d42;
+$nmb-font-t9: $personal-46628A;
+$nmb-font-t10: $personal-7ed321;
+$nmb-font-t11: $personal-c6a779;
+$nmb-font-t12: $personal-D6B47F;
+$nmb-font-t13: $personal-c6a779;
+$nmb-font-t14: $personal-B89868;
+$nmb-font-t15: $personal-ffffff;
+$nmb-font-t16: $personal-754533;
+$nmb-font-t17: $personal-754533;
+$nmb-font-t18: $personal-B89868;
+$nmb-font-t19: $personal-B89868;
+$nmb-font-t20: $personal-888888;
+$nmb-font-t21: $personal-2C2C38;
+$nmb-font-t22: $personal-888888;
+$nmb-font-t23: $personal-B89868;
+$nmb-font-t24: $personal-B89868;
+$nmb-font-t25: $personal-ce9e76;
+$nmb-font-t30: $personal-B89868;
+$nmb-font-t31: $personal-c47d42;
+$nmb-font-t32: $personal-B89868;
+$nmb-font-t33: $personal-c1c1c1;
+$nmb-font-t34: $personal-9E7355;
+$nmb-font-t35: $personal-B89868;
+$nmb-font-t36: $personal-ffffff;
+$nmb-font-t37: $personal-B89868;
+$nmb-font-t38: $personal-ffffff;
+$nmb-font-t39: $personal-B89868;
+$nmb-font-t40: $personal-4A4A4A;
+$nmb-font-t41: $personal-888888;
+$nmb-font-t42: $personal-B89868;
+$nmb-font-t43: $personal-09122b;
+$nmb-font-t44: $personal-B89868;
+$nmb-font-t45: $personal-B89868;
+$nmb-font-t46: $personal-B89868;
+
+
+/**
+ ************************************************
+ * 手机银行主题 边框 颜色定义
+ ************************************************
+ */
+$nmb-border: $personal-ededed;
+$nmb-border-gray: $personal-888888;
+$nmb-border-t1: $personal-C68B59;
+$nmb-border-t2: $personal-B89868;
+$nmb-border-t3: $personal-c1c1c1;
+$nmb-border-t4: $personal-ededed;
+$nmb-border-t5: $personal-B89868;
+$nmb-border-t6: $personal-B89868;
+$nmb-border-t7: $personal-ffffff;
+$nmb-border-t8: $personal-888888;
+$nmb-border-t9: $personal-f1c999;
+
+$nmb-link: $personal-459FFC;
+
+$nmb-bg-main: $personal-f1c999;
+$nmb-font-main: $personal-f1c999;
+$nmb-border-main: $personal-f1c999;
+
+$nmb-arrow-t1: $personal-c1c1c1;
+
+$line-t1: $personal-ededed;
+
+.app-theme-personal {
+  @import './index.scss';
+}

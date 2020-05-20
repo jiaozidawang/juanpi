@@ -1,0 +1,213 @@
+/**
+ ************************************************
+ * 颜色变量
+ ************************************************
+ */
+
+$default-ffffff: #ffffff;
+$default-f5f5f9: #f5f5f9;
+$default-dfdfdf: #dfdfdf;
+$default-ededed: #ededed;
+$default-fbf5e9: #fbf5e9;
+$default-09122b: #09122b;
+$default-888888: #888888;
+$default-c1c1c1: #c1c1c1;
+$default-ea2c1d: #ea2c1d;
+$default-dd2309: #dd2309;
+$default-e14238: #e14238;
+$default-50668b: #50668b;
+$default-46628a: #46628a;
+$default-459ffc: #459ffc;
+$default-7ed321: #7ed321;
+$default-d3bc99: #d3bc99;
+$default-ddbd89: #ddbd89;
+$default-c68b59: #c68b59;
+$default-c47d42: #c47d42;
+$default-ffe4cd: #ffe4cd;
+$default-ce9e76: #ce9e76;
+$default-9A1A1F: #9A1A1F;
+$default-BF363A: #BF363A;
+$default-E6FFF9: #E6FFF9;
+$default-fAf5f1: #fAf5f1;
+$default-3c86bf: #3c86bf;
+$default-f2f4f7: #f2f4f7;
+$default-851017: #851017;
+$default-ff7e87: #ff7e87;
+$default-2244794D: #2244794D;
+$default-1a1a1a: #1a1a1a;
+$default-58769c: #58769c;
+$default-754533: #754533;
+$default-1287f4: #1287f4;
+$default-2bd40c: #2bd40c;
+$default-ff9500: #ff9500;
+$default-18171d: #18171d;
+$default-999999: #999999;
+$default-e14238: #e14238;
+$default-F5EEEB: #F5EEEB;
+$default-BF9869: #BF9869;
+$default-1d7bea: #1d7bea;
+$default-37b89b: #37b89b;
+$default-4A4A4A: #4A4A4A;
+$default-000000: #000000;
+$default-f7f9fa: #f7f9fa;
+$default-3a9eb2: #3a9eb2;
+$default-BA3239: #BA3239;
+$default-43d340: #43d340;
+$default-4087bd: #4087bd;
+$default-d9a441: #d9a441;
+$default-d94541: #d94541;
+
+$default-ff7e87-rgba020: rgba(255, 126, 135, 0.2);
+$default-46628a-rgba010: rgba(70, 98, 138, 0.1);
+$default-ce9e76-rgba010: rgba(206, 158, 118, 0.1);
+
+/**
+ ************************************************
+ * 手机银行主题 背景 颜色定义
+ ************************************************
+ */
+$nmb-bg-t1: $default-ffffff;
+$nmb-bg-t2: $default-f5f5f9;
+$nmb-bg-t3: $default-dfdfdf;
+$nmb-bg-t4: $default-ddbd89;
+$nmb-bg-t5: $default-ededed;
+$nmb-bg-t6: $default-fbf5e9;
+$nmb-bg-t7: $default-dd2309;
+$nmb-bg-t8: $default-46628a;
+$nmb-bg-t9: $default-f5f5f9;
+$nmb-bg-t10: $default-ce9e76-rgba010;
+$nmb-bg-t11: $default-f2f4f7;
+$nmb-bg-t12: $default-1a1a1a;
+$nmb-bg-t13: $default-ff7e87-rgba020;
+$nmb-bg-t14: $default-ea2c1d;
+$nmb-bg-t15: $default-1287f4;
+$nmb-bg-t16: $default-2bd40c;
+$nmb-bg-t17: $default-ff9500;
+$nmb-bg-t18: $default-18171d;
+$nmb-bg-t19: $default-999999;
+$nmb-bg-t20: $default-46628a-rgba010;
+$nmb-bg-t21: $default-fbf5e9;
+$nmb-bg-t22: $default-F5EEEB;
+$nmb-bg-t23: $default-ea2c1d;
+$nmb-bg-t24: $default-ce9e76;
+$nmb-bg-t25: $default-1d7bea;
+$nmb-bg-t26: $default-37b89b;
+$nmb-bg-t27: $default-000000;
+$nmb-bg-t28: $default-f7f9fa;
+$nmb-bg-t29: $default-ffffff;
+$nmb-bg-t30: $default-BA3239;
+$nmb-bg-t31: $default-43d340;
+$nmb-bg-t32: $default-ea2c1d;
+$nmb-bg-t33: $default-ea2c1d;
+$nmb-bg-t34: $default-d9a441;
+$nmb-bg-t35: $default-d94541;
+$nmb-bg-t36: $default-c1c1c1;
+
+$nmb-bg-gradient-l: $default-ea2c1d;
+$nmb-bg-gradient-r: $default-ea2c1d;
+$nmb-bg-gradient-t1-l: $default-ffe4cd;
+$nmb-bg-gradient-t1-r: $default-ce9e76;
+$nmb-bg-gradient-t2: linear-gradient(to right, $default-9A1A1F, $default-BF363A);
+$nmb-bg-gradient-t3: linear-gradient(180deg, $default-E6FFF9 0%, $default-ffffff 100%);
+$nmb-bg-gradient-t4: linear-gradient(135deg, $default-4087bd 100%, $default-4087bd 100%);
+$nmb-bg-gradient-t5-l: $default-2244794D;
+$nmb-bg-gradient-t5-r: $default-2244794D;
+$nmb-bg-gradient-t6: linear-gradient(270deg, $default-851017 27%, $default-851017 27%);
+$nmb-bg-gradient-t7: linear-gradient(270deg, $default-ea2c1d 100%, $default-ea2c1d 100%);
+$nmb-bg-gradient-t8: linear-gradient(270deg, $default-ffffff 100%, $default-ffffff 100%);
+$nmb-bg-gradient-t9: $default-ff7e87-rgba020;
+$nmb-bg-gradient-t10: linear-gradient(90deg,
+  rgba(104, 221, 203, 0) 0%,
+  rgba(69, 195, 169, 0.08) 34%,
+  rgba(55, 184, 155, 0.08) 48%,
+  rgba(55, 184, 155, 0.06) 66%,
+  rgba(55, 184, 155, 0) 100%);
+$nmb-bg-gradient-t11: $default-43d340;
+
+
+/**
+ ************************************************
+ * 手机银行主题 字体 颜色定义
+ ************************************************
+ */
+$nmb-font-white: $default-ffffff;
+$nmb-font-dark: $default-09122b;
+$nmb-font-gray: $default-888888;
+$nmb-font-red: $default-ea2c1d;
+$nmb-font-t1: $default-09122b;
+$nmb-font-t2: $default-888888;
+$nmb-font-t3: $default-c1c1c1;
+$nmb-font-t4: $default-e14238;
+$nmb-font-t5: $default-50668b;
+$nmb-font-t6: $default-ffffff;
+$nmb-font-t7: $default-dd2309;
+$nmb-font-t8: $default-c47d42;
+$nmb-font-t9: $default-46628a;
+$nmb-font-t10: $default-7ed321;
+$nmb-font-t11: $default-09122b;
+$nmb-font-t12: $default-dd2309;
+$nmb-font-t13: $default-ea2c1d;
+$nmb-font-t14: $default-459ffc;
+$nmb-font-t15: $default-09122b;
+$nmb-font-t16: $default-ffffff;
+$nmb-font-t17: $default-ffffff;
+$nmb-font-t18: $default-3c86bf;
+$nmb-font-t19: $default-e14238;
+$nmb-font-t20: $default-c1c1c1;
+$nmb-font-t21: $default-e14238;
+$nmb-font-t22: $default-09122b;
+$nmb-font-t23: $default-ffffff;
+$nmb-font-t24: $default-09122b;
+$nmb-font-t25: $default-ce9e76;
+$nmb-font-t30: $default-ea2c1d;
+$nmb-font-t31: $default-c47d42;
+$nmb-font-t32: $default-09122b;
+$nmb-font-t33: $default-c1c1c1;
+$nmb-font-t34: $default-754533;
+$nmb-font-t35: $default-BF9869;
+$nmb-font-t36: $default-ce9e76;
+$nmb-font-t37: $default-3a9eb2;
+$nmb-font-t38: $default-3a9eb2;
+$nmb-font-t39: $default-459ffc;
+$nmb-font-t40: $default-888888;
+$nmb-font-t41: $default-46628a;
+$nmb-font-t42: $default-46628a;
+$nmb-font-t43: $default-09122b;
+$nmb-font-t44: $default-4087bd;
+$nmb-font-t45: $default-ea2c1d;
+$nmb-font-t46: $default-888888;
+
+
+/**
+ ************************************************
+ * 手机银行主题 边框 颜色定义
+ ************************************************
+ */
+$nmb-border: $default-ededed;
+$nmb-border-gray: $default-888888;
+$nmb-border-t1: $default-c68b59;
+$nmb-border-t2: $default-ea2c1d;
+$nmb-border-t3: $default-c1c1c1;
+$nmb-border-t4: $default-58769c;
+$nmb-border-t5: $default-e14238;
+$nmb-border-t6: $default-ea2c1d;
+$nmb-border-t7: $default-3a9eb2;
+$nmb-border-t8: $default-e14238;
+$nmb-border-t9: $default-ffffff;
+
+
+$nmb-link: $default-459ffc;
+
+$nmb-bg-main: $default-ea2c1d;
+$nmb-font-main: $default-ea2c1d;
+$nmb-border-main: $default-ea2c1d;
+
+$nmb-arrow-t1: $default-c1c1c1;
+
+// 设置线条 #ededed #ededed #2c2c38
+$line-t1: $default-ededed;
+
+
+.app-theme-default {
+  @import './index.scss';
+}

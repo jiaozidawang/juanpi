@@ -1,0 +1,177 @@
+@import '../../../../less/mixin.less';
+@import '~vux/src/styles/1px.less';
+.ghb-pwdInput{
+	// .weui-dialog{
+  //   width: 100% !important;
+  //   max-width: 100%;
+	// 	bottom: 1rem;
+	// 	right: 0;
+	// 	// bottom: auto;
+	// 	left: 0;
+  // }
+  // position: fixed;
+	.ghb-pwdInput_head{
+    height: .9rem;
+    line-height: .9rem;
+    margin: 0 @spacing;
+		box-sizing: border-box;
+    position: relative;
+		.ghb-pwdInput_title {
+      width: 100%;
+      height: 100%;
+      font-size: @fs36;
+      text-align: center;
+    }
+		.ghb-pwdInput_close{
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+      width: .28rem;
+      height: .28rem;
+      display: block;
+      background: url('~@assets/base/cha@2x.png') no-repeat;
+      background-size: 100%;
+      // .setBgIcon('~@assets/base/cha@2x.png', .28rem);
+		}
+	}
+	.ghb-pwdInput_body{
+    margin-bottom: .3rem;
+		dl{
+			// width: 4.8rem;
+			margin: .2rem auto;
+      // border: solid 1px #D9D9D9;
+			display: flex;
+			justify-content: center;
+			box-sizing: border-box;
+			dd{
+        position: relative;
+        background-color: @bg-color;
+				width: 1.05rem;
+				height: 1.05rem;
+				text-align: center;
+				line-height: 1.05rem;
+				font-size: .42rem;
+				margin-right: .12rem;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+    }
+
+    .ghb-pwdInput_bottomText{
+      font-size: @fs24;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 @spacing;
+      span {
+        color: @font-t2;
+      }
+      span:nth-child(2) {
+        color: @color-main;
+      }
+    }
+	}
+}
+
+.ghb-pwdInput_cell {
+  position: relative;
+  &::after {
+    content: " ";
+    display: inline-block;
+    height: 0.16rem;
+    width: 0.16rem;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    right: .32rem;
+    margin-top: -0.12rem;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(0deg)
+  }
+  &:active {
+    background-color: rgba(0,0,0,.05);
+  }
+}
+
+.ghb-pwdInput_cell_init{
+  height: @lh-line;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 @spacing;
+  padding-right: .2rem;
+}
+
+@hkeInputHeight: 1.03rem;
+.hke-header{
+  height: 1.06rem;
+  line-height: 1.06rem;
+  margin: 0 @spacing;
+  box-sizing: border-box;
+  position: relative;
+  .ghb-pwdInput_title {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .ghb-pwdInput_close{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: .28rem;
+    height: .28rem;
+    display: block;
+    background: url('~@assets/base/cha@2x.png') no-repeat;
+    background-size: 100%;
+    // .setBgIcon('~@assets/base/cha@2x.png', .28rem);
+  }
+}
+.hke_line{
+  height: @hkeInputHeight;
+  padding: 0 @spacing;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  &_init{
+    height: @hkeInputHeight;
+    flex: 1;
+    position: relative;
+    &_input{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      line-height: @hkeInputHeight;
+      padding-right: .2rem;
+    }
+    &_flash{
+      height: .8rem;
+      position: absolute;
+      right: .1rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    // background-color: #f2f2f2;
+  }
+  &_button{
+    height: @hkeInputHeight;
+    width: 2rem;
+    background-color: @color-main;
+    color: #fff;
+    line-height: @hkeInputHeight;
+    &:active{
+      opacity: .5;
+    }
+  }
+}
+.lines2 {
+  width: 6.9rem;
+  height: 1px;
+  border-top: 1px solid #ededed;
+  color: #ededed;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+  margin: auto;
+}

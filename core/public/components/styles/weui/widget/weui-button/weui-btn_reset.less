@@ -1,0 +1,18 @@
+@import "../../base/fn";
+
+.weui-btn_reset {
+    background-color: @bt-reset;
+    color:@font-t1;
+    border-radius: 0 !important;
+    &::after{
+      border-radius: 0 !important;
+    }
+    &:not(.weui-btn_disabled):visited {
+        color: @font-t1;
+    }
+    &:not(.weui-btn_disabled):active {
+        // color: @weuiBtnActiveFontColor;
+        // background-color: @bt-reset;
+        opacity: .5;
+    }
+}

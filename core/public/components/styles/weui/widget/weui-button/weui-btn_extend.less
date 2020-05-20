@@ -1,0 +1,30 @@
+@import "../../base/fn";
+// .weui-btn:after
+.weui-btn_extend{
+    color: @font-t0 !important;
+    &.weui-btn{
+        color: @weuiBtnDefaultDisabledFontColor;
+        background-color: @bt-disabled;
+        &::after{
+            content: " ";
+            width: 200%;
+            height: 200%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none !important;
+            -webkit-transform: scale(.5);
+            transform: scale(.5);
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+    }
+    &.weui-btn_primary {
+        background-color: @weuiBtnPrimaryDisabledBg;
+    }
+    &.weui-btn_warn {
+        background-color: @weuiBtnwarnDisabledBg;
+    }
+}

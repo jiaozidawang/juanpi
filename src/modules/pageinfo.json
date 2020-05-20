@@ -1,0 +1,16 @@
+{
+  "pageInfo": {
+    "demo/demo/index": {
+      "titleBarColor": 11944508,
+      "titleColor": 16777215
+    },
+    "ghb_collect/collect/index": {
+      "titleBarColor": 11944508,
+      "titleColor": 16777215
+    },
+    "ghb_balance/smart_deposit/index": {
+      "transparentTitle": "always",
+      "titleColor": 16777215
+    }
+  }
+}

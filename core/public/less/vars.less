@@ -1,0 +1,110 @@
+/**
+*  定义项目通用的颜色、数值等 设计稿以 750 X 1334 为标准，抽取公共变量
+*/
+
+@import '~@comp/styles/1px.less';
+
+
+// 图片预置域名
+@ui-asset-url: 'http://img.asset/';
+
+@ui-icon-url: 'http://icon.asset/';
+
+
+@import '~@core/public/less/mixin.less';
+
+
+// 字体排版
+@fs40: .4rem;// 用于标题栏标题文字或一些高层级文字
+@fs36: .36rem;// 用于标题栏标题文字或一些高层级文字
+@fs30: .3rem; // 用于列表标题，入个人中心、主要按钮里自豪
+@fs28: .28rem; // 用于标题栏右侧入口型文字
+@fs26: .26rem; // 提示性，不重要的文字
+@fs24: .24rem; // 用于列表类二级文字,如常用转账人账号
+@fs22: .22rem; // 提示性，不重要的文字
+@fs18: .18rem; // 提示性，不重要的文字
+
+@inputFontSize: @fs30; // input框字体
+
+// 行高
+@lh-st: .4rem; // 状态栏
+@lh-title: .98rem; // 标题栏
+@lh-line: .9rem; // 标准单行列表
+@lh-line-muti: 1.2rem; // 标准双行列表1
+@lh-line-muti2: 1.6rem; // 标准双行列表2
+
+
+// 字体
+@fontF-money: "PingFang SC", "Microsoft YaHei", Helvetica, sans-serif, Arial;
+
+
+// 两边留白用这个
+@spacing: .32rem;
+
+
+
+// 一些图标的路径
+@camera : '~@assets/base/scan.png'; // 相机
+@scan : '~@assets/base/scan.png'; // 相机
+
+@cha :　'~@assets/base/cha@2x.png'; // X号
+
+
+// 一些银行logo的路径
+
+// cell标题字号
+@cellTitleSize: @fs30;
+
+@logoFolder:　'~@assets/bank-logo/banks';
+
+
+
+
+
+
+/**
+******************************************************************
+*   手机银行4.0开始，下面的变量全部作废，颜色请使用颜色类集类
+******************************************************************
+*/
+
+// TODO 即将作废
+
+@linkUrl: @font-blue; // 链接字体的颜色
+
+@cellTitleFontColor: @font-t1; // cell组件标题字体颜色
+@cellValueFontColor: @font-t2; // cell组件内容字体颜色
+
+@tipsTitleFontColor: @font-t2; // 温馨提示标题字体颜色
+@tipsValueFontColor: @font-t2; // 温馨提示内容字体颜色
+
+
+//主要色彩
+@color-main: #EA2C1D; // 主色调，用于需要强调的地方，入按钮或者可点击区域，标签状态等
+@color-main2: #CE9E76; // 主色调，用于需要强调的地方，入重要资产展示的地方，会员等
+@color-main3: #754533; // 与金色搭配使用，可作为按钮，或者会员卡片类的字体颜色上使用
+
+@font-t0: #fff; // 纯白
+@font-t1: #09122B; // 字体黑色，用于标题字、一级字体的颜色
+@font-t2: #888888; // 字体颜色，用于内容字、二级字体的颜色
+@font-t3: #C1C1C1; // 用于输入框中提示文字，点击后消失
+@font-blue: #459FFC; // 用于特殊字，跳转文字等
+// @font-blue: #367de2; // 用于特殊字，跳转文字等
+
+
+@bg: #FFFFFF; // 用于内容区域白色、留白
+@bg-color: #F2F4F7; // 用于底色
+@line: #EDEDED; // 用于分割线，白底输入框边框等
+@bg-warn: #f29d38; // 用于cell或者group下方提示文字颜色或者背景色
+
+//  按钮颜色
+@bt-default: #ea2c1d; // 默认状态1
+@bt-default2: #6f4736; // 默认状态2
+@bt-click: #ce2619; // 点击状态1
+@bt-click2: #563628; // 点击状态2
+@bt-disabled: #c1c1c1; // 禁用状态
+@bt-reset: #ededed; // 重置颜色
+
+
+// cell标题字色
+@cellTitleColor: @font-t1;

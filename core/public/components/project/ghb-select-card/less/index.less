@@ -1,0 +1,52 @@
+
+@import '../../../../less/mixin.less';
+.ghb-select-card_title{
+    height: @lh-line;
+    background: @bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 @spacing;
+
+    .ghb-select-card_title_left_icon{
+        // .setBgIcon(@camera, .44rem);
+    }
+
+    .ghb-select-card_title_center{
+      flex: 1;
+      font-size: @fs36;
+      .ghb-select-card_title_center_init{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .ghb-select-card_title_right_icon{
+        .setBgIcon('~@comps/ghb-select-card/image/cha@2x.png', .26rem);
+    }
+}
+
+.ghb-select-card_button{
+    margin: .2rem @spacing;
+}
+
+@iconMarginRight:　.4rem;
+
+.bank-icon {
+  margin-right: .1rem;
+}
+
+.ghb {
+    margin-right: @iconMarginRight;
+    .setBgIcon('~@comps/ghb-select-card/image/hx_s@2x.png', .64rem);
+}
+.icbc {
+    margin-right: @iconMarginRight;
+    .setBgIcon('~@comps/ghb-select-card/image/bank2.png', .84rem);
+}
+.cmb {
+    margin-right: @iconMarginRight;
+    .setBgIcon('~@comps/ghb-select-card/image/bank17.png', .84rem);
+}

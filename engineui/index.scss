@@ -1,0 +1,745 @@
+@import './mixin.scss';
+
+/**
+ ************************************************
+ * 手机银行主题 背景 颜色定义
+ ************************************************
+ */
+
+// 注释从左到右分别是 default personal advanced 的颜色值
+
+//  主要背景颜色 原#ea2c1d 现#ea2c1d #f1c999 #ffffff
+.nmb-bg-main {
+  background: $nmb-bg-main;
+}
+
+// 白色背景色 所有主题都是白色#ffffff
+.nmb-bg-white {
+  background: #fff;
+}
+
+// 白色背景激活样式 所有主题都是#ececec
+.nmb-bg-white-active {
+  &:active {
+    background: #ececec;
+  }
+}
+
+// 背景色1 #ffffff #ffffff #2c2c38
+.nmb-bg-t1 {
+  background: $nmb-bg-t1 !important;
+}
+
+// 背景色2 #f5f5f9 #f2f4f7 #2c2c38
+.nmb-bg-t2 {
+  background: $nmb-bg-t2;
+}
+
+// 背景色3 #dfdfdf
+.nmb-bg-t3 {
+  background: $nmb-bg-t3;
+}
+
+// 背景色4 #ddbd89
+.nmb-bg-t4 {
+  background: $nmb-bg-t4;
+}
+
+// 背景色5 #ededed
+.nmb-bg-t5 {
+  background: $nmb-bg-t5;
+}
+
+// 背景色6 #FBF5E9
+.nmb-bg-t6 {
+  background: $nmb-bg-t6;
+}
+
+// 背景色7 #dd2309 #f2f4f7 #f2f4f7
+.nmb-bg-t7 {
+  background: $nmb-bg-t7;
+}
+
+// 背景色8 #46628A
+.nmb-bg-t8 {
+  background: $nmb-bg-t8;
+}
+
+// 背景色9 #f5f5f9
+.nmb-bg-t9 {
+  background: $nmb-bg-t9;
+}
+
+// 背景色10 #fAf5f1，即：rgba(206, 158, 118, 0.1)，#CE9E76加10%透明
+.nmb-bg-t10 {
+  background: $nmb-bg-t10;
+}
+
+// 背景色11 #f2f4f7
+.nmb-bg-t11 {
+  background: $nmb-bg-t11;
+}
+
+// 背景色12 #1A1A1A #56585A #56585A
+.nmb-bg-t12 {
+  background: $nmb-bg-t12;
+}
+
+// 背景色13带透明 #FF7E87(0.2) #56585A(0.6) #56585A(0.6)
+.nmb-bg-t13 {
+  background: $nmb-bg-t13;
+}
+
+// 背景色14 #EA2C1D #D9B883 #D9B883
+.nmb-bg-t14 {
+  background: $nmb-bg-t14;
+}
+
+// 背景色15 #1287f4
+.nmb-bg-t15 {
+  background: $nmb-bg-t15;
+}
+
+// 背景色16 #2bd40c
+.nmb-bg-t16 {
+  background: $nmb-bg-t16;
+}
+
+// 背景色17 #ff9500
+.nmb-bg-t17 {
+  background: $nmb-bg-t17;
+}
+
+// 背景色18 #18171d
+.nmb-bg-t18 {
+  background: $nmb-bg-t18;
+}
+
+// 背景色19 灰色#999999
+.nmb-bg-t19 {
+  background: $nmb-bg-t19;
+}
+
+// 背景色20带透明 #46628a(0.1) #B89868(0.1) #B89868(0.1)
+.nmb-bg-t20 {
+  background: $nmb-bg-t20;
+}
+
+// 背景色21 #FBF5E9 #CE9E76 #CE9E76
+.nmb-bg-t21 {
+  background: $nmb-bg-t21;
+}
+
+
+// 背景色22 #F5EEEB #9499A5 #9499A5
+.nmb-bg-t22 {
+  background: $nmb-bg-t22;
+}
+
+// 背景色23 #ea2c1d #B89868 #ffffff
+.nmb-bg-t23 {
+  background: $nmb-bg-t23;
+}
+
+// 背景色24 #ce9e76 #B89868 #ffffff
+.nmb-bg-t24 {
+  background: $nmb-bg-t24;
+}
+
+// 背景色25 #1d7bea #B89868 #ffffff
+.nmb-bg-t25 {
+  background: $nmb-bg-t25;
+}
+
+// 背景色26 #37b89b #B89868 #ffffff
+.nmb-bg-t26 {
+  background: $nmb-bg-t26;
+}
+
+// 背景色27 #000000 #000000 #ffffff
+.nmb-bg-t27 {
+  background: $nmb-bg-t27;
+}
+
+//背景色28 #f7f9fa #f7f9fa #2c2c38(50%)
+.nmb-bg-t28 {
+  background: $nmb-bg-t28;
+}
+
+// 背景色29 #ffffff #58595A #ffffff
+.nmb-bg-t29 {
+  background: $nmb-bg-t29;
+}
+
+// 背景色30 #BA3239 #56585A #696b7b
+.nmb-bg-t30 {
+  background: $nmb-bg-t30;
+}
+
+// 背景色31 #43d340 #B89868 #B89868
+.nmb-bg-t31 {
+  background: $nmb-bg-t31;
+}
+
+// 背景色32 #ea2c1d #B89868 #B89868
+.nmb-bg-t32 {
+  background: $nmb-bg-t32;
+}
+
+// 背景色33 #ea2c1d
+.nmb-bg-t33 {
+  color: $nmb-bg-t33;
+}
+
+// 背景色34 #d9a441 #D8B77E #D8B77E(45%)
+.nmb-bg-t34 {
+  background: $nmb-bg-t34;
+}
+
+// 背景色35 #d94541 #B99154 #D9B87D
+.nmb-bg-t35 {
+  background: $nmb-bg-t35;
+}
+
+// 背景色36 #c1c1c1
+.nmb-bg-t36 {
+  background: $nmb-bg-t36;
+}
+
+
+// 主要渐变背景色 默认主题无效 #ea2c1d->#ea2c1d #D9B883->#CFAA74 #696b7b->#3f4151
+.nmb-bg-gradient {
+  background: linear-gradient(to right, $nmb-bg-gradient-l, $nmb-bg-gradient-r);
+}
+
+// 渐变背景色1-进度条 #FFE4CD->#CE9E76
+.nmb-bg-gradient-t1 {
+  background: linear-gradient(90deg,
+      $nmb-bg-gradient-t1-l 0%,
+      $nmb-bg-gradient-t1-r 100%);
+}
+
+// 渐变背景色2 #9A1A1F->#BF363A #5A5C5E->#2E2F30 #696b7b->#3f4151
+.nmb-bg-gradient-t2 {
+  background: $nmb-bg-gradient-t2;
+}
+
+// 渐变背景色3 #E6FFF9->#FFFFFF #D9B883->#CFAA74 #D9B883->#CFAA74
+.nmb-bg-gradient-t3 {
+  background: $nmb-bg-gradient-t3;
+}
+
+// 渐变背景色4 #4087bd->#4087bd #5A5C5E->#2E2F30 #5A5C5E->#2E2F30
+.nmb-bg-gradient-t4 {
+  background: $nmb-bg-gradient-t4;
+}
+
+// 渐变背景色5 #224479(30%)->#224479(30%) #D9B883->#CFAA74 #D9B883->#CFAA74
+.nmb-bg-gradient-t5 {
+  background: linear-gradient(270deg,
+      $nmb-bg-gradient-t5-l 0%,
+      $nmb-bg-gradient-t5-r 100%);
+}
+
+// 渐变背景色6 #851017->#851017 #D9B883->#CFAA74 #D9B883->#CFAA74
+.nmb-bg-gradient-t6 {
+  background: $nmb-bg-gradient-t6;
+}
+
+// 渐变背景色7 #ea2c1d->#ea2c1d #D9B87D->#CFAA74 #D9B87D->#CFAA74
+.nmb-bg-gradient-t7 {
+  background: $nmb-bg-gradient-t7;
+}
+
+// 渐变背景色8 #ffffff->#ffffff #ffffff->#ffffff #696b7b->#3f4151
+.nmb-bg-gradient-t8 {
+  background: $nmb-bg-gradient-t8;
+}
+
+// 渐变背景色9 #FF7E87(0.2) #56585A(0.6) #696b7b(0%)->#3f4151
+.nmb-bg-gradient-t9 {
+  background: $nmb-bg-gradient-t9;
+}
+
+// 渐变背景色10
+/*background: linear-gradient(
+   90deg,
+   rgba(104, 221, 203, 0) 0%,
+   rgba(69, 195, 169, 0.08) 34%,
+   rgba(55, 184, 155, 0.08) 48%,
+   rgba(55, 184, 155, 0.06) 66%,
+   rgba(55, 184, 155, 0) 100%
+ );
+ background: linear-gradient(
+   90deg,
+   rgba(187,153,50,0);
+   rgba(195,163,69,0.08)
+   rgba(213,154,68,0.08)
+   rgba(184,152,55,0.06)
+   rgba(184,152,55,0)
+ );
+ background: linear-gradient(
+   90deg,
+   rgba(187,153,50,0);
+   rgba(195,163,69,0.08)
+   rgba(213,154,68,0.08)
+   rgba(184,152,55,0.06)
+   rgba(184,152,55,0)
+ );*/
+.nmb-bg-gradient-t10 {
+  background: $nmb-bg-gradient-t10;
+}
+
+// 渐变背景色11 #43d340->#43d340 #F1C999(0%)->#CA9B6A #F1C999(0%)->#CA9B6A
+.nmb-bg-gradient-t11 {
+  background: $nmb-bg-gradient-t11;
+}
+
+
+/**
+ ************************************************
+ * 手机银行主题 字体 颜色定义
+ ************************************************
+ */
+
+// 主要字体色 #ea2c1d #f1c999 #ffffff
+.nmb-font-main {
+  color: $nmb-font-main;
+}
+
+// 白色字体  所有主题都是白色 #ffffff
+.nmb-font-white {
+  color: $nmb-font-white;
+}
+
+// 深色字体  所有主题都是深色 #09122b
+.nmb-font-dark {
+  color: $nmb-font-dark;
+}
+
+// 灰色字体 所有主题都是灰色 #888888
+.nmb-font-gray {
+  color: $nmb-font-gray;
+}
+
+// 红色字体 所有主题都是红色 #ea2c1d
+.nmb-font-red {
+  color: $nmb-font-red;
+}
+
+// 字体色1 #09122b #09122b #FFFFFF
+.nmb-font-t1 {
+  color: $nmb-font-t1;
+}
+
+// 字体色2 #888888 #888888 #FFFFFF的80%透明度
+.nmb-font-t2 {
+  color: $nmb-font-t2;
+}
+
+// 字体色3 #c1c1c1 #c1c1c1 #FFFFFF的30%透明度
+.nmb-font-t3 {
+  color: $nmb-font-t3;
+}
+
+// 字体色4 #e14238 #c6a779 #c6a779
+.nmb-font-t4 {
+  color: $nmb-font-t4;
+}
+
+// 字体色5 #50668b
+.nmb-font-t5 {
+  color: $nmb-font-t5;
+}
+
+// 字体色6 #FFFFFF #F0CF98 #F0CF98
+.nmb-font-t6 {
+  color: $nmb-font-t6;
+}
+
+// 字体色7 #dd2309 #C6A779 #C6A779
+.nmb-font-t7 {
+  color: $nmb-font-t7;
+}
+
+// 字体色8 #c47d42 #D3BC99 #D3BC99
+.nmb-font-t8 {
+  color: $nmb-font-t8;
+}
+
+// 字体色9 #46628A
+.nmb-font-t9 {
+  color: $nmb-font-t9;
+}
+
+// 字体色10 #7ed321
+.nmb-font-t10 {
+  color: $nmb-font-t10;
+}
+
+// 字体色11 #09122b #C6A779 #B89868
+.nmb-font-t11 {
+  color: $nmb-font-t11;
+}
+
+// 字体色12 #dd2309 #D6B47F #09122B
+.nmb-font-t12 {
+  color: $nmb-font-t12;
+}
+
+// 字体色13 #ea2c1d #C6A779 #C6A779
+.nmb-font-t13 {
+  color: $nmb-font-t13;
+}
+
+// 字体色14 #459FFC #B89868 #459FFC
+.nmb-font-t14 {
+  color: $nmb-font-t14;
+}
+
+// 字体色15 #09122b #FFFFFF #09122b
+.nmb-font-t15 {
+  color: $nmb-font-t15;
+}
+
+// 字体色16 #FFFFFF #754533 #F0CF98
+.nmb-font-t16 {
+  color: $nmb-font-t16;
+}
+
+// 字体色17 #FFFFFF #754533 #FFFFFF
+.nmb-font-t17 {
+  color: $nmb-font-t17;
+}
+
+// 字体色18 #3c86bf #B89868 #B89868
+.nmb-font-t18 {
+  color: $nmb-font-t18;
+}
+
+// 字体色19 #e14238 #B89868 #B89868
+.nmb-font-t19 {
+  color: $nmb-font-t19;
+}
+
+// 字体色20 #c1c1c1 #888888 #888888
+.nmb-font-t20 {
+  color: $nmb-font-t20;
+}
+
+// 字体色21 #e14238 #2C2C38 #2C2C38
+.nmb-font-t21 {
+  color: $nmb-font-t21;
+}
+
+// 字体色22 #09122B #888888 #888888
+.nmb-font-t22 {
+  color: $nmb-font-t22;
+}
+
+// 字体色23 #FFFFFF #B89868 #FFFFFF
+.nmb-font-t23 {
+  color: $nmb-font-t23;
+}
+
+// 字体色24 #09122B #B89868 #B89868
+.nmb-font-t24 {
+  color: $nmb-font-t24;
+}
+
+// 字体色25 #ce9e76
+.nmb-font-t25 {
+  color: $nmb-font-t25;
+}
+
+
+// 字体色30 #ea2c1d #B89868 #B89868
+.nmb-font-t30 {
+  color: $nmb-font-t30;
+}
+
+// 字体色31 #c47d42 #c47d42 #c47d42
+.nmb-font-t31 {
+  color: $nmb-font-t31;
+}
+
+// 字体色32-金额 #09122B #B89868 #B89868
+.nmb-font-t32 {
+  color: $nmb-font-t32;
+}
+
+// 字体色33 #c1c1c1
+.nmb-font-t33 {
+  color: $nmb-font-t33;
+}
+
+// 字体色34 #754533 #9E7355 #9E7355
+.nmb-font-t34 {
+  color: $nmb-font-t34;
+}
+
+// 字体色35 #BF9869 #B89868 #B89868
+.nmb-font-t35 {
+  color: $nmb-font-t35;
+}
+
+// 字体色36 #CE9E76 #FFFFFF #FFFFFF
+.nmb-font-t36 {
+  color: $nmb-font-t36;
+}
+
+// 字体色37 #3a9eb2 #B89868 #B89868
+.nmb-font-t37 {
+  color: $nmb-font-t37;
+}
+
+// 字体色38 #3a9eb2 #ffffff #B89868
+.nmb-font-t38 {
+  color: $nmb-font-t38;
+}
+
+// 字体色39 #459ffc #B89868 #B89868
+.nmb-font-t39 {
+  color: $nmb-font-t39;
+}
+
+// 字体色40 #888888 #4A4A4A #09122B
+.nmb-font-t40 {
+  color: $nmb-font-t40;
+}
+
+// 字体色41 #46628a #888888 #888888
+.nmb-font-t41 {
+  color: $nmb-font-t41;
+}
+
+// 字体色42 #46628a #B89868 #C6A779
+.nmb-font-t42 {
+  color: $nmb-font-t42;
+}
+
+// 字体色43 #09122b #B89868 #09122b
+.nmb-font-t43 {
+  color: $nmb-font-t43;
+}
+
+// 字体色44 #4087bd #B89868 #B89868
+.nmb-font-t44 {
+  color: $nmb-font-t44;
+}
+
+// 字体色45 #ea2c1d #B89868 #C6A779
+.nmb-font-t45 {
+  color: $nmb-font-t45;
+}
+
+// 字体色46 #888888 #B89868 #B89868
+.nmb-font-t46 {
+  color: $nmb-font-t46;
+}
+
+
+
+
+/**
+ ************************************************
+ * 手机银行主题 边框 颜色定义
+ ************************************************
+ */
+
+// 主要边框色 原#ededed 现 #ea2c1d #f1c999 #ffffff
+.nmb-border-main {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-main);
+  }
+}
+
+// 全边框 #ededed
+.nmb-border {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border);
+  }
+}
+
+// 全边框灰色 #888888
+.nmb-border-gray {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-gray);
+  }
+}
+
+// 左边框 #ededed
+.nmb-border-l {
+  position: relative;
+
+  &::after {
+    @include setLeftLine($nmb-border);
+  }
+}
+
+// 右边框 #ededed
+.nmb-border-r {
+  position: relative;
+
+  &::after {
+    @include setRightLine($nmb-border);
+  }
+}
+
+// 上边框 #ededed
+.nmb-border-t {
+  position: relative;
+
+  &::after {
+    @include setTopLine($nmb-border);
+  }
+}
+
+// 下边框 #ededed
+.nmb-border-b {
+  position: relative;
+
+  &::after {
+    @include setBottomLine($nmb-border);
+  }
+}
+
+// 边框色1全边框 #C68B59 #C68B59 #C68B59
+.nmb-border-t1 {
+  border: 1px solid $nmb-border-t1;
+  // position: relative;
+  // &::after {
+  //   @include setLine($nmb-border-t1);
+  // }
+}
+
+// 边框色2全边框 #ea2c1d #B89868 #C6A779
+.nmb-border-t2 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t2);
+  }
+}
+
+// 边框色3全边框 #c1c1c1
+.nmb-border-t3 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t3);
+  }
+}
+
+// 边框色4右边框 #58769c #ededed #ededed
+.nmb-border-t4 {
+  position: relative;
+
+  &::after {
+    @include setRightLine($nmb-border-t4);
+  }
+}
+
+// 边框色5全边框 #e14238 #B89868 #B89868
+.nmb-border-t5 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t5);
+  }
+}
+
+// 边框色6全边框 #ea2c1d #B89868 #B89868
+.nmb-border-t6 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t6);
+  }
+}
+
+// 边框色7全边框 #3a9eb2 #ffffff #B89868
+.nmb-border-t7 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t7);
+  }
+}
+
+// 边框色8全边框 #e14238 #888888 #888888
+.nmb-border-t8 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t8);
+  }
+}
+
+// 边框色9全边框 #ffffff #f1c999 #ffffff
+.nmb-border-t9 {
+  position: relative;
+
+  &::after {
+    @include setLine($nmb-border-t9);
+  }
+}
+
+// 链接字体色 #459ffc #459ffC #458ffc
+.nmb-link {
+  color: $nmb-link !important;
+}
+
+/**
+ ************************************************
+ * 手机银行主题 箭头 颜色定义
+ ************************************************
+ */
+
+// 用于设置箭头 箭头颜色都是#C1C1C1
+.nmb-set-arrow {
+  position: relative;
+
+  &::after {
+    content: ' ';
+    display: inline-block;
+    height: 0.16rem;
+    width: 0.16rem;
+    border-width: 2px 2px 0 0;
+    border-color: $nmb-arrow-t1;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.12rem;
+    right: 0;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(0deg);
+    transition: transform 0.3s;
+  }
+}
+
+@mixin setBottomLine($c: #ededed, $padding:0) {
+  content: " ";
+  position: absolute;
+  left: $padding;
+  bottom: 0;
+  right: $padding;
+  height: 1px;
+  border-bottom: 1px solid $c;
+  color: $c;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+.nmb-bottom-line-t1 {
+  position: relative;
+
+  &::after {
+    @include setBottomLine($line-t1)
+  }
+}

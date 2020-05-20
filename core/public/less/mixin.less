@@ -1,0 +1,206 @@
+/**
+* 定义一下Mixin我的咪咪咪咪
+* Author liuyunxiao
+*/
+
+
+.setLine(@c: @line) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  border: 1px solid @c;
+  color: @c;
+  height: 200%;
+  transform-origin: left top;
+  transform: scale(0.5);
+}
+
+// 设置边框  传一个颜色参数
+.setBorder(@c:@line){
+    content: " ";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid @c;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    box-sizing: border-box;
+}
+
+.setLine(@c: @line) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  border: 1px solid @c;
+  color: @c;
+  height: 200%;
+  transform-origin: left top;
+  transform: scale(0.5);
+}
+
+// 设置上边线 传一个左右留白，一个颜色参数
+.setTopLine(@p:0,@c: @line) {
+    content: " ";
+    position: absolute;
+    left: @p;
+    top: 0;
+    right: @p;
+    height: 1px;
+    border-top: 1px solid @c;
+    color: @c;
+    transform-origin: 0 0;
+    transform: scaleY(0.5);
+}
+
+.setBottomLine(@p:0,@c: @line) {
+    content: " ";
+    position: absolute;
+    left: @p;
+    bottom: 0;
+    right: @p;
+    height: 1px;
+    border-bottom: 1px solid @c;
+    color: @c;
+    transform-origin: 0 100%;
+    transform: scaleY(0.5);
+}
+
+.setLeftLine(@c: @line) {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid @c;
+    color: @c;
+    transform-origin: 0 0;
+    transform: scaleX(0.5);
+}
+
+.setRightLine(@c: @line) {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-right: 1px solid @c;
+    color: @c;
+    transform-origin: 100% 0;
+    transform: scaleX(0.5);
+}
+
+// flex盒子
+.flex{
+  display: flex;
+}
+
+// ie盒子
+.borderBox{
+  box-sizing: border-box;
+}
+
+
+// 置顶
+.positionTop(){
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.positionBottom(){
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+// 设置icon的尺寸，结构为  <div></img></div>
+.setIconSize(@w:.8rem, @h:.8rem){
+  width: @w;
+  height: @h;
+  vertical-align: middle;
+  display: inline-block;
+  img{
+    width: inherit;
+    height: inherit;
+  }
+}
+
+
+// 拓展可点击区域
+.extendCover() {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -.2rem;
+    right: -.2rem;
+    bottom: -.2rem;
+    left: -.2rem;
+  }
+}
+
+// 设置背景图标，传一个地址，一个大小，
+.setBgIcon (@url,@size){
+  display: block;
+  width: @size;
+  height: @size;
+  position: relative;
+  background: url(@url) no-repeat;
+  background-size: 100% !important;
+  // 拓展可点击区域
+  &::before {
+    content: '';
+    position: absolute;
+    top: -.2rem;
+    right: -.2rem;
+    bottom: -.2rem;
+    left: -.2rem;
+  }
+}
+
+// 作用和上面的一样，这个需要长和宽，
+.setBgIcon2 (@url,@w,@h){
+  display: block;
+  width: @w;
+  height: @h;
+  background: url(@url) no-repeat;
+  background-size: 100% !important;
+  position: relative;
+}
+
+
+// 通过设置放在assets目录的图片名字设置绝对路径URL
+.setImageUrl(@image-name) {
+  background-image: url("@{ui-asset-url}@{image-name}");
+}
+
+// 设置背景图片，通过设置放在assets目录的图片名字设置绝对路径URL
+.setBackgroundImage(@image-name) {
+  background-image: url("@{ui-asset-url}@{image-name}");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+// 设置背景图标，通过设置放在assets目录的图片名字设置绝对路径URL
+.setBackgroundIcon(@image-name) {
+  background-image: url("@{ui-icon-url}@{image-name}");
+  background-position: 0 0;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}

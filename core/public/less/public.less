@@ -1,0 +1,172 @@
+.main{
+  // overflow: auto;
+  // -webkit-overflow-scrolling: touch;
+}
+
+// preMask
+.preMask {
+  width: 7.5rem;
+  height: 100%;
+  background-color: #fff;
+}
+
+
+//页面布局
+#app,.router-view,.drawer-view{
+    width: 100%;
+    height: 100%;
+}
+.router-view{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.drawer-view{
+    position: relative;
+    left: 0;
+    top: 0;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    & > .main{
+        flex: 1;
+        position: relative;
+        left:0;
+        top:0;
+    }
+}
+
+.ghbline{
+  height: @lh-line;
+}
+
+.flexLine{
+  height: @lh-line;
+  display: flex;
+  align-items: center;
+}
+
+// 按钮外面的壳
+.btn-box{
+  margin: .3rem @spacing;
+  display: flex;
+  justify-content: space-between;
+}
+
+// 分割 | 外面的壳
+.divider-box{
+  font-size: 0;
+}
+
+// 分割 | 的样式
+.divider{
+  font-size: @fs24;
+  display: inline-block;
+  position: relative;
+  padding: 0 .15rem;
+  &:first-child{
+    padding-left: 0;
+    &::after {
+      content: " ";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 1px;
+      bottom: 0;
+      border-right: 1px solid @font-t2;
+      color: @font-t2;
+      transform-origin: 100% 0;
+      transform: scaleX(0.5);
+    }
+  }
+}
+
+// 这两个用于手风琴效果===================================================
+.slide {
+  // padding: 0 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1) -.1s;
+}
+.animate {
+  max-height: 9999px;
+  transition-timing-function: cubic-bezier(0.5, 0, 1, 0);
+  transition-delay: 0s;
+}
+// 这两个用于手风琴效果===================================================
+
+
+
+// 用于设置箭头
+.ghb_arrow {
+  position: relative;
+  &::after {
+    content: " ";
+    display: inline-block;
+    height: 0.16rem;
+    width: 0.16rem;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.12rem;
+    right: 0;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(0deg);
+    transition: transform .3s;
+  }
+}
+
+.ghb_arrow_up{
+  &::after {
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(-90deg);
+  }
+}
+
+.ghb_arrow_down{
+  &::after {
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) rotate(90deg);
+  }
+}
+
+.linkUrl {
+  color: @linkUrl;
+}
+
+
+// 设置背景图标，传一个地址，一个大小，
+.setBankIcon (@sizeb) {
+  display: block;
+  width: @size;
+  height: @size;
+  position: relative;
+  background-size: 100% !important;
+}
+
+// 银行logo
+.ghb-icon-32ghbBank{background:url('~@assets/bank-logo/banks/logo_ghb.png') no-repeat;}
+.ghb-icon-32pinganBank{background:url('~@assets/bank-logo/banks/logo_pingan.png') no-repeat;}
+.ghb-icon-32gfBank{background:url('~@assets/bank-logo/banks/logo_gf.png') no-repeat;}
+.ghb-icon-32gdBank{background:url('~@assets/bank-logo/banks/logo_gd.png') no-repeat;}
+.ghb-icon-32jtBank{background:url('~@assets/bank-logo/banks/logo_jt.png') no-repeat;}
+.ghb-icon-32zsBank{background:url('~@assets/bank-logo/banks/logo_zs.png') no-repeat;}
+.ghb-icon-32bjBank{background:url('~@assets/bank-logo/banks/logo_bj.png') no-repeat;}
+.ghb-icon-32bohaiBank{background:url('~@assets/bank-logo/banks/logo_bohai.png') no-repeat;}
+.ghb-icon-32dyBank{background:url('~@assets/bank-logo/banks/logo_dy.png') no-repeat;}
+.ghb-icon-32gsBank{background:url('~@assets/bank-logo/banks/logo_gs.png') no-repeat;}
+.ghb-icon-32hengfengBank{background:url('~@assets/bank-logo/banks/logo_hengfeng.png') no-repeat;}
+.ghb-icon-32huifengBank{background:url('~@assets/bank-logo/banks/logo_huifeng.png') no-repeat;}
+.ghb-icon-32hxBank{background:url('~@assets/bank-logo/banks/logo_hx.png') no-repeat;}
+.ghb-icon-32czbankBank{background:url('~@assets/bank-logo/banks/logo_czbank.png') no-repeat;}
+.ghb-icon-32jsBank{background:url('~@assets/bank-logo/banks/logo_js.png') no-repeat;}
+.ghb-icon-32msyhBank{background:url('~@assets/bank-logo/banks/logo_msyh.png') no-repeat;}
+.ghb-icon-32nyyhBank{background:url('~@assets/bank-logo/banks/logo_nyyh.png') no-repeat;}
+.ghb-icon-32shyhBank{background:url('~@assets/bank-logo/banks/logo_shyh.png') no-repeat;}
+.ghb-icon-32xyBank{background:url('~@assets/bank-logo/banks/logo_xy.png') no-repeat;}
+.ghb-icon-32yzcxBank{background:url('~@assets/bank-logo/banks/logo_yzcx.png') no-repeat;}
+.ghb-icon-32zgyhBank{background:url('~@assets/bank-logo/banks/logo_zgyh.png') no-repeat;}
+.ghb-icon-32zxBank{background:url('~@assets/bank-logo/banks/logo_zx.png') no-repeat;}
+.ghb-icon-32zhadaBank{background:url('~@assets/bank-logo/banks/logo_zhada.png') no-repeat;}
+.ghb-icon-32sjBank{background:url('~@assets/bank-logo/banks/logo_sj.png') no-repeat;}
+.ghb-icon-32pfBank{background:url('~@assets/bank-logo/banks/logo_pf.png') no-repeat;}
+.ghb-icon-32defalutBank{background:url('~@assets/bank-logo/banks/defalutBank.png') no-repeat;}

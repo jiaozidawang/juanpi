@@ -2,8 +2,16 @@
 :beginner:
 :beginner:
 
+下载好node_module依赖后
+首次运行和更新了engineui后，要先run下面的命令：
+npm run themes 
+npm  run dll
 
+弃用:npm run common sit  有问题
 
+这个命令会把公共资源打包到static文件夹
+本地运行命令:
+npm run dev ghb_trustBuy
 
 # web前端架框安装与使用
 
